@@ -1,0 +1,209 @@
+2017-09-29 11:19:07 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'crud.admin' doesn't exist in /var/www/html/crud/vendor/cakephp/cakephp/src/Database/Schema/Collection.php on line 131
+Stack Trace:
+#0 /var/www/html/crud/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'admin', Array, Object(Cake\Database\Schema\TableSchema))
+#1 /var/www/html/crud/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(63): Cake\Database\Schema\Collection->describe('admin', Array)
+#2 /var/www/html/crud/vendor/cakephp/cakephp/src/ORM/Table.php(532): Cake\Database\Schema\CachedCollection->describe('admin')
+#3 /var/www/html/crud/vendor/cakephp/cakephp/src/ORM/Table.php(653): Cake\ORM\Table->getSchema()
+#4 /var/www/html/crud/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(217): Cake\ORM\Table->getPrimaryKey()
+#5 /var/www/html/crud/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(127): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 /var/www/html/crud/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(110): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'admin', 'Admin')
+#7 /var/www/html/crud/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(97): Bake\Shell\Task\ModelTask->bake('Admin')
+#8 /var/www/html/crud/vendor/cakephp/bake/src/Shell/BakeShell.php(257): Bake\Shell\Task\ModelTask->main('Admin')
+#9 /var/www/html/crud/vendor/cakephp/cakephp/src/Collection/CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('admin', 0)
+#10 /var/www/html/crud/vendor/cakephp/bake/src/Shell/BakeShell.php(258): Cake\Collection\Collection->each(Object(Closure))
+#11 /var/www/html/crud/vendor/cakephp/cakephp/src/Console/Shell.php(494): Bake\Shell\BakeShell->all('admin')
+#12 /var/www/html/crud/vendor/cakephp/cakephp/src/Console/CommandRunner.php(141): Cake\Console\Shell->runCommand(Array, true)
+#13 /var/www/html/crud/bin/cake.php(12): Cake\Console\CommandRunner->run(Array)
+#14 {main}
+
+
+2017-09-29 11:19:36 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'crud.admin' doesn't exist in /var/www/html/crud/vendor/cakephp/cakephp/src/Database/Schema/Collection.php on line 131
+Stack Trace:
+#0 /var/www/html/crud/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'admin', Array, Object(Cake\Database\Schema\TableSchema))
+#1 /var/www/html/crud/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(63): Cake\Database\Schema\Collection->describe('admin', Array)
+#2 /var/www/html/crud/vendor/cakephp/cakephp/src/ORM/Table.php(532): Cake\Database\Schema\CachedCollection->describe('admin')
+#3 /var/www/html/crud/vendor/cakephp/cakephp/src/ORM/Table.php(653): Cake\ORM\Table->getSchema()
+#4 /var/www/html/crud/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(217): Cake\ORM\Table->getPrimaryKey()
+#5 /var/www/html/crud/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(127): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 /var/www/html/crud/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(110): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'admin', 'Admin')
+#7 /var/www/html/crud/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(97): Bake\Shell\Task\ModelTask->bake('Admin')
+#8 /var/www/html/crud/vendor/cakephp/bake/src/Shell/BakeShell.php(257): Bake\Shell\Task\ModelTask->main('Admin')
+#9 /var/www/html/crud/vendor/cakephp/cakephp/src/Collection/CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('Admin', 0)
+#10 /var/www/html/crud/vendor/cakephp/bake/src/Shell/BakeShell.php(258): Cake\Collection\Collection->each(Object(Closure))
+#11 /var/www/html/crud/vendor/cakephp/cakephp/src/Console/Shell.php(494): Bake\Shell\BakeShell->all('Admin')
+#12 /var/www/html/crud/vendor/cakephp/cakephp/src/Console/CommandRunner.php(141): Cake\Console\Shell->runCommand(Array, true)
+#13 /var/www/html/crud/bin/cake.php(12): Cake\Console\CommandRunner->run(Array)
+#14 {main}
+
+
+2017-09-29 11:19:40 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'crud.admins' doesn't exist in /var/www/html/crud/vendor/cakephp/cakephp/src/Database/Schema/Collection.php on line 131
+Stack Trace:
+#0 /var/www/html/crud/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'admins', Array, Object(Cake\Database\Schema\TableSchema))
+#1 /var/www/html/crud/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(63): Cake\Database\Schema\Collection->describe('admins', Array)
+#2 /var/www/html/crud/vendor/cakephp/cakephp/src/ORM/Table.php(532): Cake\Database\Schema\CachedCollection->describe('admins')
+#3 /var/www/html/crud/vendor/cakephp/cakephp/src/ORM/Table.php(653): Cake\ORM\Table->getSchema()
+#4 /var/www/html/crud/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(217): Cake\ORM\Table->getPrimaryKey()
+#5 /var/www/html/crud/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(127): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 /var/www/html/crud/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(110): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'admins', 'Admins')
+#7 /var/www/html/crud/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(97): Bake\Shell\Task\ModelTask->bake('Admins')
+#8 /var/www/html/crud/vendor/cakephp/bake/src/Shell/BakeShell.php(257): Bake\Shell\Task\ModelTask->main('Admins')
+#9 /var/www/html/crud/vendor/cakephp/cakephp/src/Collection/CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('Admins', 0)
+#10 /var/www/html/crud/vendor/cakephp/bake/src/Shell/BakeShell.php(258): Cake\Collection\Collection->each(Object(Closure))
+#11 /var/www/html/crud/vendor/cakephp/cakephp/src/Console/Shell.php(494): Bake\Shell\BakeShell->all('Admins')
+#12 /var/www/html/crud/vendor/cakephp/cakephp/src/Console/CommandRunner.php(141): Cake\Console\Shell->runCommand(Array, true)
+#13 /var/www/html/crud/bin/cake.php(12): Cake\Console\CommandRunner->run(Array)
+#14 {main}
+
+
+2017-09-29 11:21:14 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'crud.admin' doesn't exist in /var/www/html/crud/vendor/cakephp/cakephp/src/Database/Schema/Collection.php on line 131
+Stack Trace:
+#0 /var/www/html/crud/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'admin', Array, Object(Cake\Database\Schema\TableSchema))
+#1 /var/www/html/crud/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(63): Cake\Database\Schema\Collection->describe('admin', Array)
+#2 /var/www/html/crud/vendor/cakephp/cakephp/src/ORM/Table.php(532): Cake\Database\Schema\CachedCollection->describe('admin')
+#3 /var/www/html/crud/vendor/cakephp/cakephp/src/ORM/Table.php(653): Cake\ORM\Table->getSchema()
+#4 /var/www/html/crud/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(217): Cake\ORM\Table->getPrimaryKey()
+#5 /var/www/html/crud/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(127): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 /var/www/html/crud/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(110): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'admin', 'Admin')
+#7 /var/www/html/crud/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(97): Bake\Shell\Task\ModelTask->bake('Admin')
+#8 /var/www/html/crud/vendor/cakephp/bake/src/Shell/BakeShell.php(257): Bake\Shell\Task\ModelTask->main('Admin')
+#9 /var/www/html/crud/vendor/cakephp/cakephp/src/Collection/CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('Admin', 0)
+#10 /var/www/html/crud/vendor/cakephp/bake/src/Shell/BakeShell.php(258): Cake\Collection\Collection->each(Object(Closure))
+#11 /var/www/html/crud/vendor/cakephp/cakephp/src/Console/Shell.php(494): Bake\Shell\BakeShell->all('Admin')
+#12 /var/www/html/crud/vendor/cakephp/cakephp/src/Console/CommandRunner.php(141): Cake\Console\Shell->runCommand(Array, true)
+#13 /var/www/html/crud/bin/cake.php(12): Cake\Console\CommandRunner->run(Array)
+#14 {main}
+
+
+2017-09-29 11:21:55 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'crud.users' doesn't exist in /var/www/html/crud/vendor/cakephp/cakephp/src/Database/Schema/Collection.php on line 131
+Stack Trace:
+#0 /var/www/html/crud/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'users', Array, Object(Cake\Database\Schema\TableSchema))
+#1 /var/www/html/crud/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(63): Cake\Database\Schema\Collection->describe('users', Array)
+#2 /var/www/html/crud/vendor/cakephp/cakephp/src/ORM/Table.php(532): Cake\Database\Schema\CachedCollection->describe('users')
+#3 /var/www/html/crud/vendor/cakephp/cakephp/src/ORM/Table.php(653): Cake\ORM\Table->getSchema()
+#4 /var/www/html/crud/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(217): Cake\ORM\Table->getPrimaryKey()
+#5 /var/www/html/crud/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(127): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 /var/www/html/crud/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(110): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'users', 'Users')
+#7 /var/www/html/crud/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(97): Bake\Shell\Task\ModelTask->bake('Users')
+#8 /var/www/html/crud/vendor/cakephp/bake/src/Shell/BakeShell.php(257): Bake\Shell\Task\ModelTask->main('Users')
+#9 /var/www/html/crud/vendor/cakephp/cakephp/src/Collection/CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('Users', 0)
+#10 /var/www/html/crud/vendor/cakephp/bake/src/Shell/BakeShell.php(258): Cake\Collection\Collection->each(Object(Closure))
+#11 /var/www/html/crud/vendor/cakephp/cakephp/src/Console/Shell.php(494): Bake\Shell\BakeShell->all('Users')
+#12 /var/www/html/crud/vendor/cakephp/cakephp/src/Console/CommandRunner.php(141): Cake\Console\Shell->runCommand(Array, true)
+#13 /var/www/html/crud/bin/cake.php(12): Cake\Console\CommandRunner->run(Array)
+#14 {main}
+
+
+2017-09-29 11:27:14 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'caketest.users' doesn't exist in /var/www/html/crud/vendor/cakephp/cakephp/src/Database/Schema/Collection.php on line 131
+Stack Trace:
+#0 /var/www/html/crud/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'users', Array, Object(Cake\Database\Schema\TableSchema))
+#1 /var/www/html/crud/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(63): Cake\Database\Schema\Collection->describe('users', Array)
+#2 /var/www/html/crud/vendor/cakephp/cakephp/src/ORM/Table.php(532): Cake\Database\Schema\CachedCollection->describe('users')
+#3 /var/www/html/crud/vendor/cakephp/cakephp/src/ORM/Table.php(653): Cake\ORM\Table->getSchema()
+#4 /var/www/html/crud/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(217): Cake\ORM\Table->getPrimaryKey()
+#5 /var/www/html/crud/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(127): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 /var/www/html/crud/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(110): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'users', 'Users')
+#7 /var/www/html/crud/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(97): Bake\Shell\Task\ModelTask->bake('Users')
+#8 /var/www/html/crud/vendor/cakephp/bake/src/Shell/BakeShell.php(257): Bake\Shell\Task\ModelTask->main('Users')
+#9 /var/www/html/crud/vendor/cakephp/cakephp/src/Collection/CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('Users', 0)
+#10 /var/www/html/crud/vendor/cakephp/bake/src/Shell/BakeShell.php(258): Cake\Collection\Collection->each(Object(Closure))
+#11 /var/www/html/crud/vendor/cakephp/cakephp/src/Console/Shell.php(494): Bake\Shell\BakeShell->all('Users')
+#12 /var/www/html/crud/vendor/cakephp/cakephp/src/Console/CommandRunner.php(141): Cake\Console\Shell->runCommand(Array, true)
+#13 /var/www/html/crud/bin/cake.php(12): Cake\Console\CommandRunner->run(Array)
+#14 {main}
+
+
+2017-09-29 11:30:53 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'caketest.users' doesn't exist in /var/www/html/crud/vendor/cakephp/cakephp/src/Database/Schema/Collection.php on line 131
+Stack Trace:
+#0 /var/www/html/crud/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'users', Array, Object(Cake\Database\Schema\TableSchema))
+#1 /var/www/html/crud/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(63): Cake\Database\Schema\Collection->describe('users', Array)
+#2 /var/www/html/crud/vendor/cakephp/cakephp/src/ORM/Table.php(532): Cake\Database\Schema\CachedCollection->describe('users')
+#3 /var/www/html/crud/vendor/cakephp/cakephp/src/ORM/Table.php(653): Cake\ORM\Table->getSchema()
+#4 /var/www/html/crud/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(217): Cake\ORM\Table->getPrimaryKey()
+#5 /var/www/html/crud/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(127): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 /var/www/html/crud/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(110): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'users', 'Users')
+#7 /var/www/html/crud/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(97): Bake\Shell\Task\ModelTask->bake('Users')
+#8 /var/www/html/crud/vendor/cakephp/bake/src/Shell/BakeShell.php(257): Bake\Shell\Task\ModelTask->main('Users')
+#9 /var/www/html/crud/vendor/cakephp/cakephp/src/Collection/CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('Users', 0)
+#10 /var/www/html/crud/vendor/cakephp/bake/src/Shell/BakeShell.php(258): Cake\Collection\Collection->each(Object(Closure))
+#11 /var/www/html/crud/vendor/cakephp/cakephp/src/Console/Shell.php(494): Bake\Shell\BakeShell->all('Users')
+#12 /var/www/html/crud/vendor/cakephp/cakephp/src/Console/CommandRunner.php(141): Cake\Console\Shell->runCommand(Array, true)
+#13 /var/www/html/crud/bin/cake.php(12): Cake\Console\CommandRunner->run(Array)
+#14 {main}
+
+
+2017-09-29 11:30:58 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'caketest.admin' doesn't exist in /var/www/html/crud/vendor/cakephp/cakephp/src/Database/Schema/Collection.php on line 131
+Stack Trace:
+#0 /var/www/html/crud/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'admin', Array, Object(Cake\Database\Schema\TableSchema))
+#1 /var/www/html/crud/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(63): Cake\Database\Schema\Collection->describe('admin', Array)
+#2 /var/www/html/crud/vendor/cakephp/cakephp/src/ORM/Table.php(532): Cake\Database\Schema\CachedCollection->describe('admin')
+#3 /var/www/html/crud/vendor/cakephp/cakephp/src/ORM/Table.php(653): Cake\ORM\Table->getSchema()
+#4 /var/www/html/crud/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(217): Cake\ORM\Table->getPrimaryKey()
+#5 /var/www/html/crud/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(127): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 /var/www/html/crud/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(110): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'admin', 'Admin')
+#7 /var/www/html/crud/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(97): Bake\Shell\Task\ModelTask->bake('Admin')
+#8 /var/www/html/crud/vendor/cakephp/bake/src/Shell/BakeShell.php(257): Bake\Shell\Task\ModelTask->main('Admin')
+#9 /var/www/html/crud/vendor/cakephp/cakephp/src/Collection/CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('Admin', 0)
+#10 /var/www/html/crud/vendor/cakephp/bake/src/Shell/BakeShell.php(258): Cake\Collection\Collection->each(Object(Closure))
+#11 /var/www/html/crud/vendor/cakephp/cakephp/src/Console/Shell.php(494): Bake\Shell\BakeShell->all('Admin')
+#12 /var/www/html/crud/vendor/cakephp/cakephp/src/Console/CommandRunner.php(141): Cake\Console\Shell->runCommand(Array, true)
+#13 /var/www/html/crud/bin/cake.php(12): Cake\Console\CommandRunner->run(Array)
+#14 {main}
+
+
+2017-09-29 11:31:04 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'caketest.clients' doesn't exist in /var/www/html/crud/vendor/cakephp/cakephp/src/Database/Schema/Collection.php on line 131
+Stack Trace:
+#0 /var/www/html/crud/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'clients', Array, Object(Cake\Database\Schema\TableSchema))
+#1 /var/www/html/crud/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(63): Cake\Database\Schema\Collection->describe('clients', Array)
+#2 /var/www/html/crud/vendor/cakephp/cakephp/src/ORM/Table.php(532): Cake\Database\Schema\CachedCollection->describe('clients')
+#3 /var/www/html/crud/vendor/cakephp/cakephp/src/ORM/Table.php(653): Cake\ORM\Table->getSchema()
+#4 /var/www/html/crud/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(217): Cake\ORM\Table->getPrimaryKey()
+#5 /var/www/html/crud/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(127): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 /var/www/html/crud/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(110): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'clients', 'Clients')
+#7 /var/www/html/crud/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(97): Bake\Shell\Task\ModelTask->bake('Clients')
+#8 /var/www/html/crud/vendor/cakephp/bake/src/Shell/BakeShell.php(257): Bake\Shell\Task\ModelTask->main('Clients')
+#9 /var/www/html/crud/vendor/cakephp/cakephp/src/Collection/CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('Clients', 0)
+#10 /var/www/html/crud/vendor/cakephp/bake/src/Shell/BakeShell.php(258): Cake\Collection\Collection->each(Object(Closure))
+#11 /var/www/html/crud/vendor/cakephp/cakephp/src/Console/Shell.php(494): Bake\Shell\BakeShell->all('Clients')
+#12 /var/www/html/crud/vendor/cakephp/cakephp/src/Console/CommandRunner.php(141): Cake\Console\Shell->runCommand(Array, true)
+#13 /var/www/html/crud/bin/cake.php(12): Cake\Console\CommandRunner->run(Array)
+#14 {main}
+
+
+2017-09-29 11:31:59 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'caketest.clients' doesn't exist in /var/www/html/testapp/vendor/cakephp/cakephp/src/Database/Schema/Collection.php on line 131
+Stack Trace:
+#0 /var/www/html/testapp/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'clients', Array, Object(Cake\Database\Schema\TableSchema))
+#1 /var/www/html/testapp/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(63): Cake\Database\Schema\Collection->describe('clients', Array)
+#2 /var/www/html/testapp/vendor/cakephp/cakephp/src/ORM/Table.php(532): Cake\Database\Schema\CachedCollection->describe('clients')
+#3 /var/www/html/testapp/vendor/cakephp/cakephp/src/ORM/Table.php(653): Cake\ORM\Table->getSchema()
+#4 /var/www/html/testapp/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(217): Cake\ORM\Table->getPrimaryKey()
+#5 /var/www/html/testapp/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(127): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 /var/www/html/testapp/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(110): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'clients', 'Clients')
+#7 /var/www/html/testapp/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(97): Bake\Shell\Task\ModelTask->bake('Clients')
+#8 /var/www/html/testapp/vendor/cakephp/bake/src/Shell/BakeShell.php(257): Bake\Shell\Task\ModelTask->main('Clients')
+#9 /var/www/html/testapp/vendor/cakephp/cakephp/src/Collection/CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('Clients', 0)
+#10 /var/www/html/testapp/vendor/cakephp/bake/src/Shell/BakeShell.php(258): Cake\Collection\Collection->each(Object(Closure))
+#11 /var/www/html/testapp/vendor/cakephp/cakephp/src/Console/Shell.php(494): Bake\Shell\BakeShell->all('Clients')
+#12 /var/www/html/testapp/vendor/cakephp/cakephp/src/Console/CommandRunner.php(141): Cake\Console\Shell->runCommand(Array, true)
+#13 /var/www/html/testapp/bin/cake.php(12): Cake\Console\CommandRunner->run(Array)
+#14 {main}
+
+
+2017-09-29 11:32:02 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'caketest.admin' doesn't exist in /var/www/html/testapp/vendor/cakephp/cakephp/src/Database/Schema/Collection.php on line 131
+Stack Trace:
+#0 /var/www/html/testapp/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'admin', Array, Object(Cake\Database\Schema\TableSchema))
+#1 /var/www/html/testapp/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(63): Cake\Database\Schema\Collection->describe('admin', Array)
+#2 /var/www/html/testapp/vendor/cakephp/cakephp/src/ORM/Table.php(532): Cake\Database\Schema\CachedCollection->describe('admin')
+#3 /var/www/html/testapp/vendor/cakephp/cakephp/src/ORM/Table.php(653): Cake\ORM\Table->getSchema()
+#4 /var/www/html/testapp/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(217): Cake\ORM\Table->getPrimaryKey()
+#5 /var/www/html/testapp/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(127): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 /var/www/html/testapp/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(110): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'admin', 'Admin')
+#7 /var/www/html/testapp/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(97): Bake\Shell\Task\ModelTask->bake('Admin')
+#8 /var/www/html/testapp/vendor/cakephp/bake/src/Shell/BakeShell.php(257): Bake\Shell\Task\ModelTask->main('Admin')
+#9 /var/www/html/testapp/vendor/cakephp/cakephp/src/Collection/CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('Admin', 0)
+#10 /var/www/html/testapp/vendor/cakephp/bake/src/Shell/BakeShell.php(258): Cake\Collection\Collection->each(Object(Closure))
+#11 /var/www/html/testapp/vendor/cakephp/cakephp/src/Console/Shell.php(494): Bake\Shell\BakeShell->all('Admin')
+#12 /var/www/html/testapp/vendor/cakephp/cakephp/src/Console/CommandRunner.php(141): Cake\Console\Shell->runCommand(Array, true)
+#13 /var/www/html/testapp/bin/cake.php(12): Cake\Console\CommandRunner->run(Array)
+#14 {main}
+
+

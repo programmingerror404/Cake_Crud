@@ -1,0 +1,1527 @@
+2017-09-29 12:55:17 Warning: Warning (4096): Argument 1 passed to App\Controller\UsersController::beforeFilter() must be an instance of App\Controller\Event, instance of Cake\Event\Event given, called in /var/www/html/testapp/vendor/cakephp/cakephp/src/Event/EventManager.php on line 416 and defined in [/var/www/html/testapp/src/Controller/UsersController.php, line 22]
+Request URL: /users
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+App\Controller\UsersController::beforeFilter() - APP/Controller/UsersController.php, line 22
+Cake\Event\EventManager::_callListener() - CORE/src/Event/EventManager.php, line 416
+Cake\Event\EventManager::dispatch() - CORE/src/Event/EventManager.php, line 393
+Cake\Controller\Controller::dispatchEvent() - CORE/src/Event/EventDispatcherTrait.php, line 110
+Cake\Controller\Controller::startupProcess() - CORE/src/Controller/Controller.php, line 502
+Cake\Http\ActionDispatcher::_invoke() - CORE/src/Http/ActionDispatcher.php, line 114
+Cake\Http\ActionDispatcher::dispatch() - CORE/src/Http/ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE/src/Http/BaseApplication.php, line 103
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE/src/Routing/Middleware/RoutingMiddleware.php, line 107
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE/src/Routing/Middleware/AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE/src/Error/Middleware/ErrorHandlerMiddleware.php, line 95
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 52
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::run() - CORE/src/Http/Runner.php, line 51
+Cake\Http\Server::run() - CORE/src/Http/Server.php, line 81
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2017-09-29 12:55:17 Warning: Warning (512): Unable to emit headers. Headers sent in file=/var/www/html/testapp/vendor/cakephp/cakephp/src/Error/Debugger.php line=850 in [/var/www/html/testapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Request URL: /users
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2017-09-29 12:55:17 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/testapp/vendor/cakephp/cakephp/src/Error/Debugger.php:850) in [/var/www/html/testapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 149]
+Request URL: /users
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 149
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2017-09-29 12:55:17 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/testapp/vendor/cakephp/cakephp/src/Error/Debugger.php:850) in [/var/www/html/testapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Request URL: /users
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2017-09-29 12:55:17 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/testapp/vendor/cakephp/cakephp/src/Error/Debugger.php:850) in [/var/www/html/testapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Request URL: /users
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2017-09-29 12:58:08 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Login could not be found.
+Exception Attributes: array (
+  'class' => 'Login',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /login
+Stack Trace:
+#0 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /var/www/html/testapp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /var/www/html/testapp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /var/www/html/testapp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(95): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /var/www/html/testapp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /var/www/html/testapp/webroot/index.php(40): Cake\Http\Server->run()
+#15 {main}
+
+
+2017-09-29 12:59:52 Error: Fatal Error (1): Class 'App\Model\Entity\DefaultPasswordHasher' not found in [/var/www/html/testapp/src/Model/Entity/User.php, line 34]
+Request URL: /users/add
+Referer URL: http://localhost:8765/users/add
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 105
+[main] - [internal], line ??
+
+
+
+2017-09-29 12:59:52 Error: [Cake\Error\FatalErrorException] Class 'App\Model\Entity\DefaultPasswordHasher' not found in /var/www/html/testapp/src/Model/Entity/User.php on line 34
+Request URL: /users/add
+Referer URL: http://localhost:8765/users/add
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /var/www/html/testapp/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(105): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Class 'App\\Mode...', '/var/www/html/t...', 34)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2017-09-29 13:25:01 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Login could not be found.
+Exception Attributes: array (
+  'class' => 'Login',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /login
+Stack Trace:
+#0 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /var/www/html/testapp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /var/www/html/testapp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /var/www/html/testapp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(95): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /var/www/html/testapp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /var/www/html/testapp/webroot/index.php(40): Cake\Http\Server->run()
+#15 {main}
+
+
+2017-09-29 13:44:03 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'caketest.user' doesn't exist
+Request URL: /users/login
+Referer URL: http://localhost:8765/users/login
+Stack Trace:
+#0 /var/www/html/testapp/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'user', Array, Object(Cake\Database\Schema\TableSchema))
+#1 /var/www/html/testapp/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(63): Cake\Database\Schema\Collection->describe('user', Array)
+#2 /var/www/html/testapp/vendor/cakephp/cakephp/src/ORM/Table.php(532): Cake\Database\Schema\CachedCollection->describe('user')
+#3 /var/www/html/testapp/vendor/cakephp/cakephp/src/ORM/Query.php(211): Cake\ORM\Table->getSchema()
+#4 /var/www/html/testapp/vendor/cakephp/cakephp/src/ORM/Query.php(168): Cake\ORM\Query->addDefaultTypes(Object(Cake\ORM\Table))
+#5 /var/www/html/testapp/vendor/cakephp/cakephp/src/ORM/Table.php(1578): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(Cake\ORM\Table))
+#6 /var/www/html/testapp/vendor/cakephp/cakephp/src/ORM/Table.php(1178): Cake\ORM\Table->query()
+#7 /var/www/html/testapp/vendor/cakephp/cakephp/src/Auth/BaseAuthenticate.php(171): Cake\ORM\Table->find('all', Array)
+#8 /var/www/html/testapp/vendor/cakephp/cakephp/src/Auth/BaseAuthenticate.php(109): Cake\Auth\BaseAuthenticate->_query('deepanshu.sriva...')
+#9 /var/www/html/testapp/vendor/cakephp/cakephp/src/Auth/FormAuthenticate.php(79): Cake\Auth\BaseAuthenticate->_findUser('deepanshu.sriva...', 'test123')
+#10 /var/www/html/testapp/vendor/cakephp/cakephp/src/Controller/Component/AuthComponent.php(820): Cake\Auth\FormAuthenticate->authenticate(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /var/www/html/testapp/src/Controller/UsersController.php(48): Cake\Controller\Component\AuthComponent->identify()
+#12 /var/www/html/testapp/vendor/cakephp/cakephp/src/Controller/Controller.php(440): App\Controller\UsersController->login()
+#13 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#14 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#15 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 /var/www/html/testapp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 /var/www/html/testapp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#21 /var/www/html/testapp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(95): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#23 /var/www/html/testapp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#25 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#26 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 /var/www/html/testapp/webroot/index.php(40): Cake\Http\Server->run()
+#28 {main}
+
+
+2017-09-29 13:57:07 Error: Fatal Error (1): Function name must be a string in [/var/www/html/testapp/src/Controller/UsersController.php, line 58]
+Request URL: /users/login
+Referer URL: http://localhost:8765/users/login
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 105
+[main] - [internal], line ??
+
+
+
+2017-09-29 13:57:08 Error: [Cake\Error\FatalErrorException] Function name must be a string in /var/www/html/testapp/src/Controller/UsersController.php on line 58
+Request URL: /users/login
+Referer URL: http://localhost:8765/users/login
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /var/www/html/testapp/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(105): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Function name m...', '/var/www/html/t...', 58)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2017-10-02 10:06:35 Error: Fatal Error (1): Call to a member function valid() on boolean in [/var/www/html/testapp/src/Controller/UsersController.php, line 31]
+Request URL: /users
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 105
+[main] - [internal], line ??
+
+
+
+2017-10-02 10:06:35 Error: [Cake\Error\FatalErrorException] Call to a member function valid() on boolean in /var/www/html/testapp/src/Controller/UsersController.php on line 31
+Request URL: /users
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /var/www/html/testapp/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(105): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', '/var/www/html/t...', 31)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2017-10-02 10:06:40 Error: [Cake\Routing\Exception\MissingControllerException] Controller class User could not be found.
+Exception Attributes: array (
+  'class' => 'User',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /user
+Stack Trace:
+#0 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /var/www/html/testapp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /var/www/html/testapp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /var/www/html/testapp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(95): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /var/www/html/testapp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /var/www/html/testapp/webroot/index.php(40): Cake\Http\Server->run()
+#15 {main}
+
+
+2017-10-02 10:06:44 Error: Fatal Error (1): Call to a member function valid() on boolean in [/var/www/html/testapp/src/Controller/UsersController.php, line 31]
+Request URL: /users
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 105
+[main] - [internal], line ??
+
+
+
+2017-10-02 10:06:45 Error: [Cake\Error\FatalErrorException] Call to a member function valid() on boolean in /var/www/html/testapp/src/Controller/UsersController.php on line 31
+Request URL: /users
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /var/www/html/testapp/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(105): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', '/var/www/html/t...', 31)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2017-10-02 10:09:31 Error: Fatal Error (1): Call to a member function read() on boolean in [/var/www/html/testapp/src/Controller/UsersController.php, line 32]
+Request URL: /users/index/home
+Referer URL: http://localhost:8765/users/login
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 105
+[main] - [internal], line ??
+
+
+
+2017-10-02 10:09:31 Error: [Cake\Error\FatalErrorException] Call to a member function read() on boolean in /var/www/html/testapp/src/Controller/UsersController.php on line 32
+Request URL: /users/index/home
+Referer URL: http://localhost:8765/users/login
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /var/www/html/testapp/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(105): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', '/var/www/html/t...', 32)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2017-10-02 10:10:11 Error: Fatal Error (1): Call to a member function read() on boolean in [/var/www/html/testapp/src/Controller/UsersController.php, line 32]
+Request URL: /users/index/home
+Referer URL: http://localhost:8765/users/login
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 105
+[main] - [internal], line ??
+
+
+
+2017-10-02 10:10:11 Error: [Cake\Error\FatalErrorException] Call to a member function read() on boolean in /var/www/html/testapp/src/Controller/UsersController.php on line 32
+Request URL: /users/index/home
+Referer URL: http://localhost:8765/users/login
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /var/www/html/testapp/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(105): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', '/var/www/html/t...', 32)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2017-10-02 10:11:45 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Login could not be found.
+Exception Attributes: array (
+  'class' => 'Login',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /login
+Stack Trace:
+#0 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /var/www/html/testapp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /var/www/html/testapp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /var/www/html/testapp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(95): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /var/www/html/testapp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /var/www/html/testapp/webroot/index.php(40): Cake\Http\Server->run()
+#15 {main}
+
+
+2017-10-02 10:26:38 Error: Fatal Error (1): Call to a member function read() on null in [/var/www/html/testapp/src/Controller/UsersController.php, line 56]
+Request URL: /users/login
+Referer URL: http://localhost:8765/users/login
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 105
+[main] - [internal], line ??
+
+
+
+2017-10-02 10:26:38 Error: [Cake\Error\FatalErrorException] Call to a member function read() on null in /var/www/html/testapp/src/Controller/UsersController.php on line 56
+Request URL: /users/login
+Referer URL: http://localhost:8765/users/login
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /var/www/html/testapp/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(105): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', '/var/www/html/t...', 56)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2017-10-02 10:29:03 Warning: Warning (512): Unable to emit headers. Headers sent in file=/var/www/html/testapp/vendor/cakephp/cakephp/src/Error/Debugger.php line=949 in [/var/www/html/testapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Request URL: /users/index/home
+Referer URL: http://localhost:8765/users/login
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2017-10-02 10:29:03 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/testapp/vendor/cakephp/cakephp/src/Error/Debugger.php:949) in [/var/www/html/testapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 149]
+Request URL: /users/index/home
+Referer URL: http://localhost:8765/users/login
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 149
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2017-10-02 10:29:03 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/testapp/vendor/cakephp/cakephp/src/Error/Debugger.php:949) in [/var/www/html/testapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Request URL: /users/index/home
+Referer URL: http://localhost:8765/users/login
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2017-10-02 10:29:03 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/testapp/vendor/cakephp/cakephp/src/Error/Debugger.php:949) in [/var/www/html/testapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Request URL: /users/index/home
+Referer URL: http://localhost:8765/users/login
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2017-10-02 10:53:38 Error: Fatal Error (1): Call to undefined function App\Controller\printr() in [/var/www/html/testapp/src/Controller/UsersController.php, line 32]
+Request URL: /users
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 105
+[main] - [internal], line ??
+
+
+
+2017-10-02 10:53:38 Error: [Cake\Error\FatalErrorException] Call to undefined function App\Controller\printr() in /var/www/html/testapp/src/Controller/UsersController.php on line 32
+Request URL: /users
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /var/www/html/testapp/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(105): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to undefin...', '/var/www/html/t...', 32)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2017-10-02 10:54:17 Error: Fatal Error (1): Call to a member function check() on null in [/var/www/html/testapp/src/Controller/UsersController.php, line 31]
+Request URL: /users
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 105
+[main] - [internal], line ??
+
+
+
+2017-10-02 10:54:17 Warning: Headers already sent in /var/www/html/testapp/src/Controller/UsersController.php:31
+2017-10-02 10:54:17 Error: [Cake\Error\FatalErrorException] Call to a member function check() on null in /var/www/html/testapp/src/Controller/UsersController.php on line 31
+Request URL: /users
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /var/www/html/testapp/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(105): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', '/var/www/html/t...', 31)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2017-10-02 10:56:03 Warning: Warning (512): Unable to emit headers. Headers sent in file=/var/www/html/testapp/vendor/cakephp/cakephp/src/Error/Debugger.php line=949 in [/var/www/html/testapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Request URL: /users
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2017-10-02 10:56:03 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/testapp/vendor/cakephp/cakephp/src/Error/Debugger.php:949) in [/var/www/html/testapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 149]
+Request URL: /users
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 149
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2017-10-02 10:56:03 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/testapp/vendor/cakephp/cakephp/src/Error/Debugger.php:949) in [/var/www/html/testapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Request URL: /users
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2017-10-02 10:56:03 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/testapp/vendor/cakephp/cakephp/src/Error/Debugger.php:949) in [/var/www/html/testapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Request URL: /users
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2017-10-02 11:05:26 Error: Fatal Error (1): Call to a member function check() on boolean in [/var/www/html/testapp/src/Controller/UsersController.php, line 27]
+Request URL: /users
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 105
+[main] - [internal], line ??
+
+
+
+2017-10-02 11:05:26 Error: [Cake\Error\FatalErrorException] Call to a member function check() on boolean in /var/www/html/testapp/src/Controller/UsersController.php on line 27
+Request URL: /users
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /var/www/html/testapp/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(105): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', '/var/www/html/t...', 27)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2017-10-02 11:09:28 Error: [Cake\Controller\Exception\MissingComponentException] Component class SessionComponent could not be found.
+Exception Attributes: array (
+  'class' => 'SessionComponent',
+  'plugin' => NULL,
+)
+Request URL: /users
+Stack Trace:
+#0 /var/www/html/testapp/vendor/cakephp/cakephp/src/Core/ObjectRegistry.php(94): Cake\Controller\ComponentRegistry->_throwMissingClassError('Session', NULL)
+#1 /var/www/html/testapp/vendor/cakephp/cakephp/src/Controller/Controller.php(324): Cake\Core\ObjectRegistry->load('Session', Array)
+#2 /var/www/html/testapp/src/Controller/AppController.php(45): Cake\Controller\Controller->loadComponent('Session')
+#3 /var/www/html/testapp/vendor/cakephp/cakephp/src/Controller/Controller.php(263): App\Controller\AppController->initialize()
+#4 [internal function]: Cake\Controller\Controller->__construct(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(45): ReflectionClass->newInstance(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 /var/www/html/testapp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 /var/www/html/testapp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 /var/www/html/testapp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(95): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 /var/www/html/testapp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 /var/www/html/testapp/webroot/index.php(40): Cake\Http\Server->run()
+#20 {main}
+
+
+2017-10-02 11:13:31 Error: [Cake\Controller\Exception\MissingComponentException] Component class SessionComponent could not be found.
+Exception Attributes: array (
+  'class' => 'SessionComponent',
+  'plugin' => NULL,
+)
+Request URL: /users
+Stack Trace:
+#0 /var/www/html/testapp/vendor/cakephp/cakephp/src/Core/ObjectRegistry.php(94): Cake\Controller\ComponentRegistry->_throwMissingClassError('Session', NULL)
+#1 /var/www/html/testapp/vendor/cakephp/cakephp/src/Controller/Controller.php(324): Cake\Core\ObjectRegistry->load('Session', Array)
+#2 /var/www/html/testapp/src/Controller/AppController.php(45): Cake\Controller\Controller->loadComponent('Session')
+#3 /var/www/html/testapp/vendor/cakephp/cakephp/src/Controller/Controller.php(263): App\Controller\AppController->initialize()
+#4 [internal function]: Cake\Controller\Controller->__construct(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(45): ReflectionClass->newInstance(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 /var/www/html/testapp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 /var/www/html/testapp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 /var/www/html/testapp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(95): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 /var/www/html/testapp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 /var/www/html/testapp/webroot/index.php(40): Cake\Http\Server->run()
+#20 {main}
+
+
+2017-10-02 11:13:48 Error: [Cake\Controller\Exception\MissingComponentException] Component class SessionComponent could not be found.
+Exception Attributes: array (
+  'class' => 'SessionComponent',
+  'plugin' => NULL,
+)
+Request URL: /users/
+Stack Trace:
+#0 /var/www/html/testapp/vendor/cakephp/cakephp/src/Core/ObjectRegistry.php(94): Cake\Controller\ComponentRegistry->_throwMissingClassError('Session', NULL)
+#1 /var/www/html/testapp/vendor/cakephp/cakephp/src/Controller/Controller.php(324): Cake\Core\ObjectRegistry->load('Session', Array)
+#2 /var/www/html/testapp/src/Controller/AppController.php(45): Cake\Controller\Controller->loadComponent('Session')
+#3 /var/www/html/testapp/vendor/cakephp/cakephp/src/Controller/Controller.php(263): App\Controller\AppController->initialize()
+#4 [internal function]: Cake\Controller\Controller->__construct(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(45): ReflectionClass->newInstance(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 /var/www/html/testapp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 /var/www/html/testapp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 /var/www/html/testapp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(95): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 /var/www/html/testapp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 /var/www/html/testapp/webroot/index.php(40): Cake\Http\Server->run()
+#20 {main}
+
+
+2017-10-02 11:14:17 Error: [Cake\Controller\Exception\MissingComponentException] Component class SessionComponent could not be found.
+Exception Attributes: array (
+  'class' => 'SessionComponent',
+  'plugin' => NULL,
+)
+Request URL: /users/
+Stack Trace:
+#0 /var/www/html/testapp/vendor/cakephp/cakephp/src/Core/ObjectRegistry.php(94): Cake\Controller\ComponentRegistry->_throwMissingClassError('Session', NULL)
+#1 /var/www/html/testapp/vendor/cakephp/cakephp/src/Controller/Controller.php(324): Cake\Core\ObjectRegistry->load('Session', Array)
+#2 /var/www/html/testapp/src/Controller/AppController.php(45): Cake\Controller\Controller->loadComponent('Session')
+#3 /var/www/html/testapp/vendor/cakephp/cakephp/src/Controller/Controller.php(263): App\Controller\AppController->initialize()
+#4 [internal function]: Cake\Controller\Controller->__construct(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(45): ReflectionClass->newInstance(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 /var/www/html/testapp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 /var/www/html/testapp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 /var/www/html/testapp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(95): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 /var/www/html/testapp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 /var/www/html/testapp/webroot/index.php(40): Cake\Http\Server->run()
+#20 {main}
+
+
+2017-10-02 11:15:59 Error: Fatal Error (1): Call to a member function session_check() on boolean in [/var/www/html/testapp/src/Controller/UsersController.php, line 27]
+Request URL: /users/
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 105
+[main] - [internal], line ??
+
+
+
+2017-10-02 11:16:00 Error: [Cake\Error\FatalErrorException] Call to a member function session_check() on boolean in /var/www/html/testapp/src/Controller/UsersController.php on line 27
+Request URL: /users/
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /var/www/html/testapp/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(105): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', '/var/www/html/t...', 27)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2017-10-02 11:16:32 Error: Fatal Error (1): Call to a member function session_check() on boolean in [/var/www/html/testapp/src/Controller/UsersController.php, line 27]
+Request URL: /users/
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 105
+[main] - [internal], line ??
+
+
+
+2017-10-02 11:16:32 Error: [Cake\Error\FatalErrorException] Call to a member function session_check() on boolean in /var/www/html/testapp/src/Controller/UsersController.php on line 27
+Request URL: /users/
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /var/www/html/testapp/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(105): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', '/var/www/html/t...', 27)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2017-10-02 11:16:34 Error: Fatal Error (1): Call to a member function session_check() on boolean in [/var/www/html/testapp/src/Controller/UsersController.php, line 27]
+Request URL: /users/
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 105
+[main] - [internal], line ??
+
+
+
+2017-10-02 11:16:34 Error: [Cake\Error\FatalErrorException] Call to a member function session_check() on boolean in /var/www/html/testapp/src/Controller/UsersController.php on line 27
+Request URL: /users/
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /var/www/html/testapp/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(105): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', '/var/www/html/t...', 27)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2017-10-02 11:16:58 Error: Fatal Error (1): Call to a member function session_check() on boolean in [/var/www/html/testapp/src/Controller/UsersController.php, line 27]
+Request URL: /users/
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 105
+[main] - [internal], line ??
+
+
+
+2017-10-02 11:16:58 Error: [Cake\Error\FatalErrorException] Call to a member function session_check() on boolean in /var/www/html/testapp/src/Controller/UsersController.php on line 27
+Request URL: /users/
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /var/www/html/testapp/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(105): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', '/var/www/html/t...', 27)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2017-10-02 11:17:38 Error: Fatal Error (1): Call to a member function session_check() on boolean in [/var/www/html/testapp/src/Controller/UsersController.php, line 26]
+Request URL: /users/
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 105
+[main] - [internal], line ??
+
+
+
+2017-10-02 11:17:38 Error: [Cake\Error\FatalErrorException] Call to a member function session_check() on boolean in /var/www/html/testapp/src/Controller/UsersController.php on line 26
+Request URL: /users/
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /var/www/html/testapp/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(105): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', '/var/www/html/t...', 26)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2017-10-02 11:17:41 Error: Fatal Error (1): Call to a member function session_check() on boolean in [/var/www/html/testapp/src/Controller/UsersController.php, line 26]
+Request URL: /users/
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 105
+[main] - [internal], line ??
+
+
+
+2017-10-02 11:17:41 Error: [Cake\Error\FatalErrorException] Call to a member function session_check() on boolean in /var/www/html/testapp/src/Controller/UsersController.php on line 26
+Request URL: /users/
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /var/www/html/testapp/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(105): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', '/var/www/html/t...', 26)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2017-10-02 11:17:52 Error: Fatal Error (1): Call to a member function session_check() on boolean in [/var/www/html/testapp/src/Controller/UsersController.php, line 26]
+Request URL: /users/
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 105
+[main] - [internal], line ??
+
+
+
+2017-10-02 11:17:52 Error: [Cake\Error\FatalErrorException] Call to a member function session_check() on boolean in /var/www/html/testapp/src/Controller/UsersController.php on line 26
+Request URL: /users/
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /var/www/html/testapp/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(105): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', '/var/www/html/t...', 26)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2017-10-02 11:19:58 Error: Fatal Error (1): Call to a member function session_check() on boolean in [/var/www/html/testapp/src/Controller/UsersController.php, line 26]
+Request URL: /users/
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 105
+[main] - [internal], line ??
+
+
+
+2017-10-02 11:19:58 Error: [Cake\Error\FatalErrorException] Call to a member function session_check() on boolean in /var/www/html/testapp/src/Controller/UsersController.php on line 26
+Request URL: /users/
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /var/www/html/testapp/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(105): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', '/var/www/html/t...', 26)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2017-10-02 11:20:46 Error: Fatal Error (1): Call to a member function session_check() on boolean in [/var/www/html/testapp/src/Controller/UsersController.php, line 26]
+Request URL: /users/
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 105
+[main] - [internal], line ??
+
+
+
+2017-10-02 11:20:46 Error: [Cake\Error\FatalErrorException] Call to a member function session_check() on boolean in /var/www/html/testapp/src/Controller/UsersController.php on line 26
+Request URL: /users/
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /var/www/html/testapp/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(105): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', '/var/www/html/t...', 26)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2017-10-02 11:20:53 Error: Fatal Error (1): Call to a member function session_check() on boolean in [/var/www/html/testapp/src/Controller/UsersController.php, line 26]
+Request URL: /users/login
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 105
+[main] - [internal], line ??
+
+
+
+2017-10-02 11:20:53 Error: [Cake\Error\FatalErrorException] Call to a member function session_check() on boolean in /var/www/html/testapp/src/Controller/UsersController.php on line 26
+Request URL: /users/login
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /var/www/html/testapp/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(105): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', '/var/www/html/t...', 26)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2017-10-02 11:20:57 Error: Fatal Error (1): Call to a member function session_check() on boolean in [/var/www/html/testapp/src/Controller/UsersController.php, line 26]
+Request URL: /users/login
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 105
+[main] - [internal], line ??
+
+
+
+2017-10-02 11:20:57 Error: [Cake\Error\FatalErrorException] Call to a member function session_check() on boolean in /var/www/html/testapp/src/Controller/UsersController.php on line 26
+Request URL: /users/login
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /var/www/html/testapp/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(105): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', '/var/www/html/t...', 26)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2017-10-02 11:20:59 Error: Fatal Error (1): Call to a member function session_check() on boolean in [/var/www/html/testapp/src/Controller/UsersController.php, line 26]
+Request URL: /users
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 105
+[main] - [internal], line ??
+
+
+
+2017-10-02 11:20:59 Error: [Cake\Error\FatalErrorException] Call to a member function session_check() on boolean in /var/www/html/testapp/src/Controller/UsersController.php on line 26
+Request URL: /users
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /var/www/html/testapp/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(105): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', '/var/www/html/t...', 26)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2017-10-02 11:23:21 Error: Fatal Error (1): Call to undefined method App\Controller\Component\SessionComponent::check() in [/var/www/html/testapp/src/Controller/UsersController.php, line 27]
+Request URL: /users/login?redirect=%2Fusers
+Referer URL: http://localhost:8765/users/login?redirect=%2Fusers
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 105
+[main] - [internal], line ??
+
+
+
+2017-10-02 11:23:22 Error: [Cake\Error\FatalErrorException] Call to undefined method App\Controller\Component\SessionComponent::check() in /var/www/html/testapp/src/Controller/UsersController.php on line 27
+Request URL: /users/login?redirect=%2Fusers
+Referer URL: http://localhost:8765/users/login?redirect=%2Fusers
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /var/www/html/testapp/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(105): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to undefin...', '/var/www/html/t...', 27)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2017-10-02 11:23:48 Error: [Cake\Controller\Exception\MissingComponentException] Component class SessionComponent could not be found.
+Exception Attributes: array (
+  'class' => 'SessionComponent',
+  'plugin' => NULL,
+)
+Request URL: /users/login?redirect=%2Fusers
+Referer URL: http://localhost:8765/users/login?redirect=%2Fusers
+Stack Trace:
+#0 /var/www/html/testapp/vendor/cakephp/cakephp/src/Core/ObjectRegistry.php(94): Cake\Controller\ComponentRegistry->_throwMissingClassError('Session', NULL)
+#1 /var/www/html/testapp/vendor/cakephp/cakephp/src/Controller/Controller.php(324): Cake\Core\ObjectRegistry->load('Session', Array)
+#2 /var/www/html/testapp/src/Controller/AppController.php(45): Cake\Controller\Controller->loadComponent('Session')
+#3 /var/www/html/testapp/vendor/cakephp/cakephp/src/Controller/Controller.php(263): App\Controller\AppController->initialize()
+#4 [internal function]: Cake\Controller\Controller->__construct(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(45): ReflectionClass->newInstance(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 /var/www/html/testapp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 /var/www/html/testapp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 /var/www/html/testapp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(95): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 /var/www/html/testapp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 /var/www/html/testapp/webroot/index.php(40): Cake\Http\Server->run()
+#20 {main}
+
+
+2017-10-02 11:25:42 Error: Fatal Error (1): Call to a member function session_check() on boolean in [/var/www/html/testapp/src/Controller/UsersController.php, line 27]
+Request URL: /users/login?redirect=%2Fusers
+Referer URL: http://localhost:8765/users/login?redirect=%2Fusers
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 105
+[main] - [internal], line ??
+
+
+
+2017-10-02 11:25:42 Error: [Cake\Error\FatalErrorException] Call to a member function session_check() on boolean in /var/www/html/testapp/src/Controller/UsersController.php on line 27
+Request URL: /users/login?redirect=%2Fusers
+Referer URL: http://localhost:8765/users/login?redirect=%2Fusers
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /var/www/html/testapp/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(105): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', '/var/www/html/t...', 27)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2017-10-02 11:26:21 Error: Fatal Error (1): Call to a member function session_check() on boolean in [/var/www/html/testapp/src/Controller/UsersController.php, line 27]
+Request URL: /users/login?redirect=%2Fusers
+Referer URL: http://localhost:8765/users/login?redirect=%2Fusers
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 105
+[main] - [internal], line ??
+
+
+
+2017-10-02 11:26:21 Error: [Cake\Error\FatalErrorException] Call to a member function session_check() on boolean in /var/www/html/testapp/src/Controller/UsersController.php on line 27
+Request URL: /users/login?redirect=%2Fusers
+Referer URL: http://localhost:8765/users/login?redirect=%2Fusers
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /var/www/html/testapp/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(105): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', '/var/www/html/t...', 27)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2017-10-02 11:27:53 Error: Fatal Error (1): Call to a member function session_check() on boolean in [/var/www/html/testapp/src/Controller/UsersController.php, line 27]
+Request URL: /users/login?redirect=%2Fusers
+Referer URL: http://localhost:8765/users/login?redirect=%2Fusers
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 105
+[main] - [internal], line ??
+
+
+
+2017-10-02 11:27:53 Error: [Cake\Error\FatalErrorException] Call to a member function session_check() on boolean in /var/www/html/testapp/src/Controller/UsersController.php on line 27
+Request URL: /users/login?redirect=%2Fusers
+Referer URL: http://localhost:8765/users/login?redirect=%2Fusers
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /var/www/html/testapp/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(105): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', '/var/www/html/t...', 27)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2017-10-02 11:28:34 Error: Fatal Error (1): Call to a member function session_check() on boolean in [/var/www/html/testapp/src/Controller/UsersController.php, line 27]
+Request URL: /users/login?redirect=%2Fusers
+Referer URL: http://localhost:8765/users/login?redirect=%2Fusers
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 105
+[main] - [internal], line ??
+
+
+
+2017-10-02 11:28:34 Error: [Cake\Error\FatalErrorException] Call to a member function session_check() on boolean in /var/www/html/testapp/src/Controller/UsersController.php on line 27
+Request URL: /users/login?redirect=%2Fusers
+Referer URL: http://localhost:8765/users/login?redirect=%2Fusers
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /var/www/html/testapp/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(105): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', '/var/www/html/t...', 27)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2017-10-02 11:29:10 Error: Fatal Error (1): Call to a member function session_check() on boolean in [/var/www/html/testapp/src/Controller/UsersController.php, line 27]
+Request URL: /users/login?redirect=%2Fusers
+Referer URL: http://localhost:8765/users/login?redirect=%2Fusers
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 105
+[main] - [internal], line ??
+
+
+
+2017-10-02 11:29:10 Error: [Cake\Error\FatalErrorException] Call to a member function session_check() on boolean in /var/www/html/testapp/src/Controller/UsersController.php on line 27
+Request URL: /users/login?redirect=%2Fusers
+Referer URL: http://localhost:8765/users/login?redirect=%2Fusers
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /var/www/html/testapp/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(105): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', '/var/www/html/t...', 27)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2017-10-02 11:29:43 Error: Fatal Error (1): Call to a member function session_check() on boolean in [/var/www/html/testapp/src/Controller/UsersController.php, line 27]
+Request URL: /users/login?redirect=%2Fusers
+Referer URL: http://localhost:8765/users/login?redirect=%2Fusers
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 105
+[main] - [internal], line ??
+
+
+
+2017-10-02 11:29:43 Error: [Cake\Error\FatalErrorException] Call to a member function session_check() on boolean in /var/www/html/testapp/src/Controller/UsersController.php on line 27
+Request URL: /users/login?redirect=%2Fusers
+Referer URL: http://localhost:8765/users/login?redirect=%2Fusers
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /var/www/html/testapp/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(105): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', '/var/www/html/t...', 27)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2017-10-02 11:31:26 Error: Fatal Error (1): Call to a member function session_check() on boolean in [/var/www/html/testapp/src/Controller/UsersController.php, line 27]
+Request URL: /users/login?redirect=%2Fusers
+Referer URL: http://localhost:8765/users/login?redirect=%2Fusers
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 105
+[main] - [internal], line ??
+
+
+
+2017-10-02 11:31:26 Error: [Cake\Error\FatalErrorException] Call to a member function session_check() on boolean in /var/www/html/testapp/src/Controller/UsersController.php on line 27
+Request URL: /users/login?redirect=%2Fusers
+Referer URL: http://localhost:8765/users/login?redirect=%2Fusers
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /var/www/html/testapp/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(105): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', '/var/www/html/t...', 27)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2017-10-02 11:42:21 Error: Fatal Error (1): Call to a member function session_check() on boolean in [/var/www/html/testapp/src/Controller/UsersController.php, line 27]
+Request URL: /users/login?redirect=%2Fusers
+Referer URL: http://localhost:8765/users/login?redirect=%2Fusers
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 105
+[main] - [internal], line ??
+
+
+
+2017-10-02 11:42:21 Error: [Cake\Error\FatalErrorException] Call to a member function session_check() on boolean in /var/www/html/testapp/src/Controller/UsersController.php on line 27
+Request URL: /users/login?redirect=%2Fusers
+Referer URL: http://localhost:8765/users/login?redirect=%2Fusers
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /var/www/html/testapp/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(105): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', '/var/www/html/t...', 27)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2017-10-02 11:46:37 Error: Fatal Error (1): Class 'App\Controller\CakeSession' not found in [/var/www/html/testapp/src/Controller/UsersController.php, line 27]
+Request URL: /users/login?redirect=%2Fusers
+Referer URL: http://localhost:8765/users/login?redirect=%2Fusers
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 105
+[main] - [internal], line ??
+
+
+
+2017-10-02 11:46:37 Error: [Cake\Error\FatalErrorException] Class 'App\Controller\CakeSession' not found in /var/www/html/testapp/src/Controller/UsersController.php on line 27
+Request URL: /users/login?redirect=%2Fusers
+Referer URL: http://localhost:8765/users/login?redirect=%2Fusers
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /var/www/html/testapp/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(105): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Class 'App\\Cont...', '/var/www/html/t...', 27)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2017-10-02 11:47:10 Error: Fatal Error (1): Call to a member function session_check() on boolean in [/var/www/html/testapp/src/Controller/UsersController.php, line 27]
+Request URL: /users/login?redirect=%2Fusers
+Referer URL: http://localhost:8765/users/login?redirect=%2Fusers
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 105
+[main] - [internal], line ??
+
+
+
+2017-10-02 11:47:10 Error: [Cake\Error\FatalErrorException] Call to a member function session_check() on boolean in /var/www/html/testapp/src/Controller/UsersController.php on line 27
+Request URL: /users/login?redirect=%2Fusers
+Referer URL: http://localhost:8765/users/login?redirect=%2Fusers
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /var/www/html/testapp/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(105): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', '/var/www/html/t...', 27)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2017-10-02 11:47:38 Error: Fatal Error (1): Call to a member function hasuser() on boolean in [/var/www/html/testapp/src/Controller/UsersController.php, line 27]
+Request URL: /users/login?redirect=%2Fusers
+Referer URL: http://localhost:8765/users/login?redirect=%2Fusers
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 105
+[main] - [internal], line ??
+
+
+
+2017-10-02 11:47:38 Error: [Cake\Error\FatalErrorException] Call to a member function hasuser() on boolean in /var/www/html/testapp/src/Controller/UsersController.php on line 27
+Request URL: /users/login?redirect=%2Fusers
+Referer URL: http://localhost:8765/users/login?redirect=%2Fusers
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /var/www/html/testapp/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(105): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', '/var/www/html/t...', 27)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2017-10-02 11:48:21 Error: Fatal Error (1): Call to undefined method App\Controller\Component\SessionComponent::check() in [/var/www/html/testapp/src/Controller/Component/SessionComponent.php, line 9]
+Request URL: /users/login?redirect=%2Fusers
+Referer URL: http://localhost:8765/users/login?redirect=%2Fusers
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 105
+[main] - [internal], line ??
+
+
+
+2017-10-02 11:48:21 Error: [Cake\Error\FatalErrorException] Call to undefined method App\Controller\Component\SessionComponent::check() in /var/www/html/testapp/src/Controller/Component/SessionComponent.php on line 9
+Request URL: /users/login?redirect=%2Fusers
+Referer URL: http://localhost:8765/users/login?redirect=%2Fusers
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /var/www/html/testapp/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(105): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to undefin...', '/var/www/html/t...', 9)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2017-10-02 11:50:00 Error: Fatal Error (1): Call to undefined method App\Controller\Component\SessionComponent::read() in [/var/www/html/testapp/src/Controller/Component/SessionComponent.php, line 9]
+Request URL: /users/login?redirect=%2Fusers
+Referer URL: http://localhost:8765/users/login?redirect=%2Fusers
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 105
+[main] - [internal], line ??
+
+
+
+2017-10-02 11:50:00 Error: [Cake\Error\FatalErrorException] Call to undefined method App\Controller\Component\SessionComponent::read() in /var/www/html/testapp/src/Controller/Component/SessionComponent.php on line 9
+Request URL: /users/login?redirect=%2Fusers
+Referer URL: http://localhost:8765/users/login?redirect=%2Fusers
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /var/www/html/testapp/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(105): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to undefin...', '/var/www/html/t...', 9)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2017-10-02 11:51:00 Error: Fatal Error (1): Call to undefined method App\Controller\Component\SessionComponent::read() in [/var/www/html/testapp/src/Controller/Component/SessionComponent.php, line 9]
+Request URL: /users/login?redirect=%2Fusers
+Referer URL: http://localhost:8765/users/login?redirect=%2Fusers
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 105
+[main] - [internal], line ??
+
+
+
+2017-10-02 11:51:00 Error: [Cake\Error\FatalErrorException] Call to undefined method App\Controller\Component\SessionComponent::read() in /var/www/html/testapp/src/Controller/Component/SessionComponent.php on line 9
+Request URL: /users/login?redirect=%2Fusers
+Referer URL: http://localhost:8765/users/login?redirect=%2Fusers
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /var/www/html/testapp/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(105): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to undefin...', '/var/www/html/t...', 9)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2017-10-02 11:58:43 Error: Fatal Error (1): Call to undefined method App\Controller\Component\SessionComponent::read() in [/var/www/html/testapp/src/Controller/Component/SessionComponent.php, line 9]
+Request URL: /users/login?redirect=%2Fusers
+Referer URL: http://localhost:8765/users/login?redirect=%2Fusers
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 105
+[main] - [internal], line ??
+
+
+
+2017-10-02 11:58:43 Error: [Cake\Error\FatalErrorException] Call to undefined method App\Controller\Component\SessionComponent::read() in /var/www/html/testapp/src/Controller/Component/SessionComponent.php on line 9
+Request URL: /users/login?redirect=%2Fusers
+Referer URL: http://localhost:8765/users/login?redirect=%2Fusers
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /var/www/html/testapp/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(105): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to undefin...', '/var/www/html/t...', 9)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2017-10-02 12:00:57 Error: Fatal Error (1): Call to undefined method App\Controller\Component\SessionComponent::read() in [/var/www/html/testapp/src/Controller/Component/SessionComponent.php, line 9]
+Request URL: /users/login?redirect=%2Fusers
+Referer URL: http://localhost:8765/users/login?redirect=%2Fusers
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 105
+[main] - [internal], line ??
+
+
+
+2017-10-02 12:00:57 Error: [Cake\Error\FatalErrorException] Call to undefined method App\Controller\Component\SessionComponent::read() in /var/www/html/testapp/src/Controller/Component/SessionComponent.php on line 9
+Request URL: /users/login?redirect=%2Fusers
+Referer URL: http://localhost:8765/users/login?redirect=%2Fusers
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /var/www/html/testapp/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(105): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to undefin...', '/var/www/html/t...', 9)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2017-10-02 12:01:23 Error: [Cake\Controller\Exception\MissingComponentException] Component class SessionComponent could not be found.
+Exception Attributes: array (
+  'class' => 'SessionComponent',
+  'plugin' => NULL,
+)
+Request URL: /users/login?redirect=%2Fusers
+Referer URL: http://localhost:8765/users/login?redirect=%2Fusers
+Stack Trace:
+#0 /var/www/html/testapp/vendor/cakephp/cakephp/src/Core/ObjectRegistry.php(94): Cake\Controller\ComponentRegistry->_throwMissingClassError('Session', NULL)
+#1 /var/www/html/testapp/vendor/cakephp/cakephp/src/Controller/Controller.php(324): Cake\Core\ObjectRegistry->load('Session', Array)
+#2 /var/www/html/testapp/src/Controller/AppController.php(45): Cake\Controller\Controller->loadComponent('Session')
+#3 /var/www/html/testapp/vendor/cakephp/cakephp/src/Controller/Controller.php(263): App\Controller\AppController->initialize()
+#4 [internal function]: Cake\Controller\Controller->__construct(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(45): ReflectionClass->newInstance(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 /var/www/html/testapp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 /var/www/html/testapp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 /var/www/html/testapp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(95): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 /var/www/html/testapp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 /var/www/html/testapp/webroot/index.php(40): Cake\Http\Server->run()
+#20 {main}
+
+
+2017-10-02 12:01:41 Error: Fatal Error (1): Call to undefined method App\Controller\Component\SessionComponent::check() in [/var/www/html/testapp/src/Controller/UsersController.php, line 28]
+Request URL: /users/login?redirect=%2Fusers
+Referer URL: http://localhost:8765/users/login?redirect=%2Fusers
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 105
+[main] - [internal], line ??
+
+
+
+2017-10-02 12:01:41 Error: [Cake\Error\FatalErrorException] Call to undefined method App\Controller\Component\SessionComponent::check() in /var/www/html/testapp/src/Controller/UsersController.php on line 28
+Request URL: /users/login?redirect=%2Fusers
+Referer URL: http://localhost:8765/users/login?redirect=%2Fusers
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /var/www/html/testapp/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(105): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to undefin...', '/var/www/html/t...', 28)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2017-10-02 12:16:58 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::3() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => '3',
+  'prefix' => '',
+  'plugin' => false,
+)
+Request URL: /users/3
+Stack Trace:
+#0 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#1 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#2 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /var/www/html/testapp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /var/www/html/testapp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /var/www/html/testapp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(95): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /var/www/html/testapp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /var/www/html/testapp/webroot/index.php(40): Cake\Http\Server->run()
+#15 {main}
+
+
+2017-10-02 12:19:33 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::index.json() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'index.json',
+  'prefix' => '',
+  'plugin' => false,
+)
+Request URL: /users/index.json
+Stack Trace:
+#0 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#1 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#2 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /var/www/html/testapp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /var/www/html/testapp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /var/www/html/testapp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(95): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /var/www/html/testapp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /var/www/html/testapp/webroot/index.php(40): Cake\Http\Server->run()
+#15 {main}
+
+
+2017-10-02 12:20:33 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::index.json() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'index.json',
+  'prefix' => '',
+  'plugin' => false,
+)
+Request URL: /users/index.json
+Stack Trace:
+#0 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#1 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#2 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /var/www/html/testapp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /var/www/html/testapp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /var/www/html/testapp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(95): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /var/www/html/testapp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /var/www/html/testapp/webroot/index.php(40): Cake\Http\Server->run()
+#15 {main}
+
+
+2017-10-02 12:20:41 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Index.json could not be found.
+Exception Attributes: array (
+  'class' => 'Index.json',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /index.json
+Stack Trace:
+#0 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(85): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(36): Cake\Http\ControllerFactory->getControllerClass(Object(Cake\Http\ServerRequest))
+#2 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 /var/www/html/testapp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /var/www/html/testapp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 /var/www/html/testapp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(95): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 /var/www/html/testapp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /var/www/html/testapp/webroot/index.php(40): Cake\Http\Server->run()
+#16 {main}
+
+
+2017-10-02 12:24:21 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::1() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => '1',
+  'prefix' => '',
+  'plugin' => false,
+)
+Request URL: /users/1
+Stack Trace:
+#0 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#1 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#2 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /var/www/html/testapp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /var/www/html/testapp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /var/www/html/testapp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(95): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /var/www/html/testapp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /var/www/html/testapp/webroot/index.php(40): Cake\Http\Server->run()
+#15 {main}
+
+
+2017-10-02 12:24:34 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Index could not be found.
+Exception Attributes: array (
+  'class' => 'Index',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /index/1
+Stack Trace:
+#0 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /var/www/html/testapp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /var/www/html/testapp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /var/www/html/testapp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(95): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /var/www/html/testapp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /var/www/html/testapp/webroot/index.php(40): Cake\Http\Server->run()
+#15 {main}
+
+
+2017-10-02 14:23:33 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "panels"
+Request URL: /debug_kit/panels/view/undefined
+Referer URL: http://localhost:8765/debug_kit/toolbar/9194a581-71b6-4e16-8eff-d2a326f31417
+Stack Trace:
+#0 /var/www/html/testapp/vendor/cakephp/cakephp/src/ORM/Table.php(1441): Cake\ORM\Query->firstOrFail()
+#1 /var/www/html/testapp/vendor/cakephp/debug_kit/src/Controller/PanelsController.php(95): Cake\ORM\Table->get('undefined')
+#2 /var/www/html/testapp/vendor/cakephp/cakephp/src/Controller/Controller.php(440): DebugKit\Controller\PanelsController->view('undefined')
+#3 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#4 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(DebugKit\Controller\PanelsController))
+#5 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /var/www/html/testapp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 /var/www/html/testapp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 /var/www/html/testapp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(95): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 /var/www/html/testapp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 /var/www/html/testapp/webroot/index.php(40): Cake\Http\Server->run()
+#18 {main}
+
+
+2017-10-02 14:23:40 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "panels"
+Request URL: /debug_kit/panels/view/undefined
+Referer URL: http://localhost:8765/debug_kit/toolbar/9194a581-71b6-4e16-8eff-d2a326f31417
+Stack Trace:
+#0 /var/www/html/testapp/vendor/cakephp/cakephp/src/ORM/Table.php(1441): Cake\ORM\Query->firstOrFail()
+#1 /var/www/html/testapp/vendor/cakephp/debug_kit/src/Controller/PanelsController.php(95): Cake\ORM\Table->get('undefined')
+#2 /var/www/html/testapp/vendor/cakephp/cakephp/src/Controller/Controller.php(440): DebugKit\Controller\PanelsController->view('undefined')
+#3 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#4 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(DebugKit\Controller\PanelsController))
+#5 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /var/www/html/testapp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 /var/www/html/testapp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 /var/www/html/testapp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(95): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 /var/www/html/testapp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 /var/www/html/testapp/vendor/cakephp/cakephp/src/Http/Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 /var/www/html/testapp/webroot/index.php(40): Cake\Http\Server->run()
+#18 {main}
+
+
